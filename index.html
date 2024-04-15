@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-	<title>WDM</title>
+	<title>WDA</title>
 	<meta content="" name="description">
 	<meta content="" name="keywords">
 	<meta charset="UTF-8" />
@@ -67,7 +67,7 @@
 			<div class="wrap-table100">
 				<div class="table100 ver1 m-b-110">
 					<div class="table100-head">
-						<h2>Compare The Results Obtained From The Three Models</h2>
+						<h2>Rank The Products</h2>
 
 						<div class="container">
 							<div class="row">
@@ -75,40 +75,72 @@
 									<table class="table table-bordered table-hover dt-responsive
 										dataframe">
 										<caption class="text-center">DataSet Get From Kaggle <a
-												href="https://www.kaggle.com/austinreese/craigslist-carstrucks-data"
+												href="https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/code?datasetId=435"
 												target="_blank">DataTables</a></caption>
 										<thead>
 											<tr>
-												<th>Type</th>
-												<th>Accuracy</th>
-												<th>Precision</th>
-												<th>Recall</th>
-												<th>F1-Score</th>
+												<th>Product</th>
+												<th>Total Revenue Generated</th>
+												<th>Quantity-Ordered</th>
+												<th>Price-Each</th>
+												<th>Total Number of Orders</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>Logistic Regression Model Performance</td>
-												<td>27.56</td>
-												<td>27.56</td>
-												<td>100.00</td>
-												<td>43.21</td>
+												<td>Trains</td>
+												<td>226243.47</td>
+												<td>2712</td>
+												<td>75.654675</td>
+												<td>77</td>
 											</tr>
 
 											<tr>
-												<td>Decision Tree Model Performance</td>
-												<td>59.32</td>
-												<td>65.31</td>
-												<td>59.32</td>
-												<td>60.95</td>
+												<td>Ships</td>
+												<td>714437.13</td>
+												<td>8127</td>
+												<td>83.855470</td>
+												<td>234</td>
 											</tr>
 
 											<tr>
-												<td>Naive Bayes Model Performance</td>
-												<td>28.79</td>
-												<td>24.82</td>
-												<td>36.62</td>
-												<td>21.71</td>
+												<td>Planes</td>
+												<td>975003.57</td>
+												<td>10727</td>
+												<td>81.740915</td>
+												<td>306</td>
+											</tr>
+
+											<tr>
+												<td>Trucks and Buses</td>
+												<td>1127789.84</td>
+												<td>10777</td>
+												<td>87.527940</td>
+												<td>301</td>
+											</tr>
+
+											<tr>
+												<td>Motorcycles</td>
+												<td>1166388.34</td>
+												<td>11663</td>
+												<td>82.997553</td>
+												<td>331</td>
+											</tr>
+
+											<tr>
+												<td>Vintage Cars</td>
+												<td>1903150.84</td>
+												<td>21069</td>
+												<td>78.148204</td>
+												<td>607</td>
+											</tr>
+
+											<tr>
+												<td>Classic Cars</td>
+												<td>3919615.66</td>
+												<td>33992</td>
+												<td>87.335781</td>
+												<td>967</td>
 											</tr>
 										</tbody>
 									</table>
@@ -121,8 +153,184 @@
 		</div>
 	</div>
 
-	<!--<p class="p">Designed By: AbdULRahman Al-Olabi</p>
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<h2>Compute The Metrics For Each Month</h2>
 
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<table class="table table-bordered table-hover dt-responsive
+										dataframe">
+										<caption class="text-center">DataSet Get From Kaggle <a
+												href="https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/code?datasetId=435"
+												target="_blank">DataTables</a></caption>
+										<thead>
+											<tr>
+												<th>Month</th>
+												<th>Sales</th>
+												<th>Quantity-Ordered</th>
+												<th>Price-Each</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>April</td>
+												<td>669390.96</td>
+												<td>6704</td>
+												<td>82.939775</td>
+											</tr>
+
+											<tr>
+												<td>August</td>
+												<td>659310.57</td>
+												<td>6538</td>
+												<td>83.634084</td>
+											</tr>
+
+											<tr>
+												<td>December</td>
+												<td>634679.12</td>
+												<td>6293</td>
+												<td>83.253222</td>
+											</tr>
+
+											<tr>
+												<td>February</td>
+												<td>810441.90</td>
+												<td>7903</td>
+												<td>84.386116</td>
+											</tr>
+
+											<tr>
+												<td>January</td>
+												<td>785874.44</td>
+												<td>7997</td>
+												<td>83.457555</td>
+											</tr>
+
+											<tr>
+												<td>July</td>
+												<td>514875.97</td>
+												<td>4899</td>
+												<td>85.856525</td>
+											</tr>
+
+											<tr>
+												<td>June</td>
+												<td>454756.78</td>
+												<td>4620</td>
+												<td>83.003893</td>
+											</tr>
+
+											<tr>
+												<td>March</td>
+												<td>754501.39</td>
+												<td>7585</td>
+												<td>82.229292</td>
+											</tr>
+
+											<tr>
+												<td>May</td>
+												<td>923972.56</td>
+												<td>8992</td>
+												<td>83.878611</td>
+											</tr>
+
+											<tr>
+												<td>November</td>
+												<td>2118885.67</td>
+												<td>20857</td>
+												<td>83.736064</td>
+											</tr>
+
+											<tr>
+												<td>October</td>
+												<td>1121215.22</td>
+												<td>10998</td>
+												<td>83.953375</td>
+											</tr>
+
+											<tr>
+												<td>September</td>
+												<td>584724.27</td>
+												<td>5681</td>
+												<td>83.496374</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<h2>Top 5 Cities Where The Company Has The Highest Sales</h2>
+
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<table class="table table-bordered table-hover dt-responsive
+										dataframe">
+										<caption class="text-center">DataSet Get From Kaggle <a
+												href="https://www.kaggle.com/datasets/kyanyoga/sample-sales-data/code?datasetId=435"
+												target="_blank">DataTables</a></caption>
+										<thead>
+											<tr>
+												<th>City </th>
+												<th>Sales</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Madrid</td>
+												<td>1082551.44</td>
+											</tr>
+
+											<tr>
+												<td>San Rafael</td>
+												<td>654858.06</td>
+											</tr>
+
+											<tr>
+												<td>NYC</td>
+												<td>560787.77</td>
+											</tr>
+
+											<tr>
+												<td>Singapore</td>
+												<td>288488.41</td>
+											</tr>
+
+											<tr>
+												<td>Paris</td>
+												<td>268944.68</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<hr>
+
+
+	<p class="p">Designed by Enas & Razan</p>
 	<!-- MDB -->
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
